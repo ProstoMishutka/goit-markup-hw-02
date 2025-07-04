@@ -1,6 +1,16 @@
 @font-face {
   font-family: "Roboto";
   src:
+    url("/fonts/Roboto-Black.woff2") format("woff2"),
+    url("/fonts/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
     url("/fonts/Roboto-Medium.woff2") format("woff2"),
     url("/fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
@@ -51,6 +61,8 @@ body {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 p,
@@ -67,10 +79,17 @@ a {
   text-decoration: none;
 }
 
-/* * {
-    border: 1px red solid;
-} */
-/* Main-Logo fot pages */
+img {
+  display: block;
+}
+
+/* Header for pages */
+.page-header {
+  padding: 24px 156px;
+  border-bottom: 1px #e7e9fc solid;
+}
+
+/* Main-Logo for pages */
 .page-header .main-logo,
 .page-footer .main-logo {
   font-family: "Raleway", sans-serif;
@@ -78,39 +97,50 @@ a {
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  color: #4d5ae5;
+  font-weight: 800;
+}
+
+.main-logo .header-part-logo {
   color: #2e2f42;
 }
 
-.main-logo .part-logo {
-  color: #4d5ae5;
+.main-logo .footer-part-logo {
+  color: #f4f4fd;
 }
 
 /* Nav-panel for pages */
 .nav-panel .link {
   color: #2e2f42;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+}
+
+.nav-panel .link:hover,
+.nav-panel .link:focus {
+  color: #404bbf;
 }
 
 /* Contacts for pages */
 .contacts .mail,
 .contacts .telephone {
   color: #434455;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
+}
+
+.contacts .mail:hover,
+.contacts .telephone:hover,
+.contacts .mail:focus,
+.contacts .telephone:focus {
+  color: #404bbf;
 }
 
 /* Hero section */
 .hero-section {
-  height: 600px;
   background-color: #2e2f42;
-  padding-top: 188px;
+  padding: 188px 0px 188px 0px;
 }
 
-.hero-section h1 {
+.hero-section .hero-title {
   color: #ffffff;
   font-weight: 700;
   font-size: 56px;
@@ -136,7 +166,19 @@ a {
   letter-spacing: 0.04em;
 }
 
+.hero-section .hero-button:hover {
+  background-color: #404bbf;
+  cursor: pointer;
+}
 /* Section Core values */
+.core-values {
+  padding: 120px 156px 120px 156px;
+}
+
+.core-values .core-values-item {
+  width: 264px;
+}
+
 .core-values .core-value-title {
   color: #2e2f42;
   font-weight: 500;
@@ -146,6 +188,10 @@ a {
 }
 
 /* Section Activities */
+.activities {
+  padding: 0px 156px 120px 156px;
+}
+
 .activities .activities-title {
   margin-bottom: 72px;
   color: #2e2f42;
@@ -163,7 +209,7 @@ a {
 /* Section Our team */
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0px;
+  padding: 120px 156px;
 }
 
 .team .team-title {
@@ -181,20 +227,18 @@ a {
 }
 
 .team .team-person {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   width: 264px;
   height: 380px;
 
-  padding-bottom: 32px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   box-shadow:
     0px 2px 1px 0px #2e2f4214,
     0px 1px 1px 0px #2e2f4229,
     0px 1px 6px 0px #2e2f4214;
-}
-.team .person-photo {
-    border: 1px red solid;
 }
 
 .team .person-name {
@@ -208,27 +252,73 @@ a {
 
 .team .team-person .occupation {
   text-align: center;
-  margin: 0 auto;
+}
+
+.page-footer {
+  background-color: #2e2f42;
+  padding: 100px 0px 100px 156px;
+}
+
+.page-footer .footer-text {
+  color: #f4f4fd;
+  width: 264px;
+  margin-top: 16px;
 }
 
 /* Style for PORTFOLIO */
+/* Section Filters */
+.filters {
+  padding: 96px 427px 72px 427px;
+}
+
 .filters .button {
   background-color: #f4f4fd;
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
   font-weight: 500;
   color: #4d5ae5;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .filters .button:hover,
 .filters .button:focus {
+  cursor: pointer;
   background-color: #404bbf;
-  border: none;
+  border: 1px #404bbf solid;
   box-shadow:
     0px 2px 2px 0px #0000001f,
     0px 2px 1px 0px #00000014,
     0px 3px 1px 0px #0000001a;
   color: #ffffff;
+}
+
+/* Section Portfolios */
+.portfolios {
+  padding: 0px 156px 120px 156px;
+}
+
+.portfolios .portfolios-item {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 420px;
+  border: 1px #e7e9fc solid;
+  box-sizing: content-box;
+}
+
+.portfolios .portfolio-name {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 32px 0px 8px 16px;
+}
+
+.portfolios .project-type {
+  color: #434455;
+  margin-left: 16px;
 }
