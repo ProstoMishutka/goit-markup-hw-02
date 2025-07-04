@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("/fonts/Roboto-Medium.woff2") format("woff2"),
+    url("/fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("/fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src:
+    url("/fonts/Raleway-ExtraBold.woff2") format("woff2"),
+    url("/fonts/Raleway-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #434455;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* * {
+    border: 1px red solid;
+} */
+/* Main-Logo fot pages */
+.page-header .main-logo,
+.page-footer .main-logo {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #2e2f42;
+}
+
+.main-logo .part-logo {
+  color: #4d5ae5;
+}
+
+/* Nav-panel for pages */
+.nav-panel .link {
+  color: #2e2f42;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Contacts for pages */
+.contacts .mail,
+.contacts .telephone {
+  color: #434455;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+/* Hero section */
+.hero-section {
+  height: 600px;
+  background-color: #2e2f42;
+  padding-top: 188px;
+}
+
+.hero-section h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+.hero-section .hero-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
+  gap: 10px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+/* Section Core values */
+.core-values .core-value-title {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0px 0px 8px 0px;
+}
+
+/* Section Activities */
+.activities .activities-title {
+  margin-bottom: 72px;
+  color: #2e2f42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.activities .activities-list {
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Our team */
+.team {
+  background-color: #f4f4fd;
+  padding: 120px 0px;
+}
+
+.team .team-title {
+  margin-bottom: 72px;
+  color: #2e2f42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.team .team-list {
+  margin: 0;
+  padding: 0;
+}
+
+.team .team-person {
+  background-color: #ffffff;
+  width: 264px;
+  height: 380px;
+
+  padding-bottom: 32px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow:
+    0px 2px 1px 0px #2e2f4214,
+    0px 1px 1px 0px #2e2f4229,
+    0px 1px 6px 0px #2e2f4214;
+}
+.team .person-photo {
+    border: 1px red solid;
+}
+
+.team .person-name {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 32px 0px 8px 0px;
+}
+
+.team .team-person .occupation {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Style for PORTFOLIO */
+.filters .button {
+  background-color: #f4f4fd;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  color: #4d5ae5;
+}
+
+.filters .button:hover,
+.filters .button:focus {
+  background-color: #404bbf;
+  border: none;
+  box-shadow:
+    0px 2px 2px 0px #0000001f,
+    0px 2px 1px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
+  color: #ffffff;
+}
