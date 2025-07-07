@@ -6,37 +6,36 @@
     <title>WebStudio</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
-    <header class="page-header">
-      <nav>
-        <a class="main-logo" href="index.html">Web<span class="header-part-logo">Studio</span></a>
-        <ul class="nav-panel">
+    <header class="header">
+      <nav class="header-menu">
+        <a class="logo" href="index.html">Web<span class="logo-second-part">Studio</span></a>
+        <ul class="header-list">
           <li>
-            <a class="link" href="#">Studio</a>
+            <a class="header-link" href="#">Studio</a>
           </li>
           <li>
-            <a class="link" href="./portfolio.html">Portfolio</a>
+            <a class="header-link" href="./portfolio.html">Portfolio</a>
           </li>
           <li>
-            <a class="link" href="#">Contacts</a>
+            <a class="header-link" href="#">Contacts</a>
           </li>
         </ul>
       </nav>
-      <address class="contacts">
-        <ul>
-          <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="telephone" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      <address class="header-contacts">
+        <ul class="header-address-list">
+          <li><a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="header-tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero-section">
+      <section class="hero">
         <h1 class="hero-title">
           Effective Solutions<br />
           for Your Business
@@ -44,33 +43,34 @@
         <button class="hero-button" type="button">Order Service</button>
       </section>
 
-      <!-- Core values -->
-      <section class="core-values">
-        <ul class="core-value-list">
-          <li class="core-values-item">
-            <h3 class="core-value-title">Strategy</h3>
-            <p class="core-value-text">
+      <!-- Values -->
+      <section class="values">
+        <h2>Core values</h2>
+        <ul class="values__list">
+          <li class="values__item">
+            <h3 class="values__item-title">Strategy</h3>
+            <p class="values__item-text">
               Our goal is to identify the business problem to walk away with the perfect and
               creative solution.
             </p>
           </li>
-          <li class="core-values-item">
-            <h3 class="core-value-title">Punctuality</h3>
-            <p class="core-value-text">
+          <li class="values__item">
+            <h3 class="values__item-title">Punctuality</h3>
+            <p class="values__item-text">
               Bring the key message to the brand's audience for the best price within the shortest
               possible time.
             </p>
           </li>
-          <li class="core-values-item">
-            <h3 class="core-value-title">Diligence</h3>
-            <p class="core-value-text">
+          <li class="values__item">
+            <h3 class="values__item-title">Diligence</h3>
+            <p class="values__item-text">
               Research and confirm brands that present the strongest digital growth opportunities
               and minimize risk.
             </p>
           </li>
-          <li class="core-values-item">
-            <h3 class="core-value-title">Technologies</h3>
-            <p class="core-value-text">
+          <li class="values__item">
+            <h3 class="values__item-title">Technologies</h3>
+            <p class="values__item-text">
               Design practice focused on digital experiences. We bring forth a deep passion for
               problem-solving.
             </p>
@@ -80,7 +80,7 @@
 
       <!-- Activities -->
       <section class="activities">
-        <h3 class="activities-title">What Are We Doing</h3>
+        <h2 class="activities-title">What Are We Doing</h2>
         <ul class="activities-list">
           <li>
             <img src="./image/activities/laptop.webp" alt="laptop" width="360" height="300" />
@@ -99,59 +99,59 @@
         </ul>
       </section>
 
-      <!-- Our team -->
+      <!-- Team -->
       <section class="team">
-        <h2 class="team-title">Our Team</h2>
-        <ul class="team-list">
-          <li class="team-person">
+        <h2 class="team__title">Our Team</h2>
+        <ul class="team__list">
+          <li class="team__person">
             <img
-              class="person-photo"
+              class="team__person-photo"
               src="./image/team/Mark.jpg"
               alt="Mark Guerrero – Product Designer"
               width="264"
               height="260"
             />
-            <h3 class="person-name">Mark Guerrero</h3>
-            <p class="occupation">Product Designer</p>
+            <h3 class="team__person-name">Mark Guerrero</h3>
+            <p class="team__person-occupation">Product Designer</p>
           </li>
-          <li class="team-person">
+          <li class="team__person">
             <img
-              class="person-photo"
+              class="team__person-photo"
               src="./image/team/Tom.jpg"
               alt="Tom Ford - Frontend Developer"
               width="264"
               height="260"
             />
-            <h3 class="person-name">Tom Ford</h3>
-            <p class="occupation">Frontend Developer</p>
+            <h3 class="team__person-name">Tom Ford</h3>
+            <p class="team__person-occupation">Frontend Developer</p>
           </li>
-          <li class="team-person">
+          <li class="team__person">
             <img
-              class="person-photo"
+              class="team__person-photo"
               src="./image/team/Camila.jpg"
               alt="Camila Garcia - Marketing"
               width="264"
               height="260"
             />
-            <h3 class="person-name">Camila Garcia</h3>
-            <p class="occupation">Marketing</p>
+            <h3 class="team__person-name">Camila Garcia</h3>
+            <p class="team__person-occupation">Marketing</p>
           </li>
-          <li class="team-person">
+          <li class="team__person">
             <img
-              class="person-photo"
+              class="team__person-photo"
               src="./image/team/Daniel.jpg"
               alt="Daniel Wilson - UI Designer"
               width="264"
               height="260"
             />
-            <h3 class="person-name">Daniel Wilson</h3>
-            <p class="occupation">UI Designer</p>
+            <h3 class="team__person-name">Daniel Wilson</h3>
+            <p class="team__person-occupation">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
-      <a class="main-logo" href="./index.html">Web<span class="footer-part-logo">Studio</span></a>
+    <footer class="footer">
+      <a class="logo" href="./index.html">Web<span class="logo-second-part">Studio</span></a>
       <p class="footer-text">
         Increase the flow of customers and sales for your business with digital marketing & growth
         solutions.
