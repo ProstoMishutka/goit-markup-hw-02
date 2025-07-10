@@ -96,6 +96,7 @@
   font-display: swap;
 }
 
+/* Common styles */
 body {
   background-color: var(--base-page-color);
   color: var(--base-font-color);
@@ -106,6 +107,26 @@ body {
   line-height: 1.5;
 }
 
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Reset */
 ul {
   list-style-type: none;
   margin: 0;
@@ -140,25 +161,6 @@ button {
   cursor: pointer;
 }
 
-.container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0px 15px 0px 15px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 /* Page WebStudio */
 /* Section Header */
 .header {
@@ -166,7 +168,7 @@ button {
   border-bottom: 1px #e7e9fc solid;
 }
 
-.header .container {
+.header-container {
   display: flex;
   justify-content: space-between;
 }
@@ -238,7 +240,7 @@ button {
   text-align: center;
 }
 
-.hero .container {
+.hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,19 +276,18 @@ button {
 
 /* Section Values */
 .values {
-  padding: 120px 0;
+  padding: 120px 0 60px 0;
 }
 
 .values__list {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .values__item {
   max-width: 264px;
-  flex-basis: calc((100% -72px) / 3);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .values__item-title {
@@ -299,7 +300,7 @@ button {
 
 /* Section Activities */
 .activities {
-  padding-bottom: 120px;
+  padding: 60px 0 120px 0;
 }
 
 .activities-title {
@@ -319,7 +320,7 @@ button {
 }
 
 .activities-image {
-  flex-basis: calc((100% -48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* Section Team */
@@ -347,7 +348,6 @@ button {
 .team__person {
   flex-basis: calc((100% - 72px) / 4);
   max-width: 264px;
-  min-width: 264px;
   padding-bottom: 32px;
   background-color: var(--bg-team-list-color);
   box-shadow:
@@ -393,7 +393,7 @@ button {
   padding: 96px 0px 120px 0px;
 }
 
-.portfolio .container {
+.portfolio-container {
   display: flex;
   flex-direction: column;
 }
@@ -438,7 +438,6 @@ button {
 .portfolio-item {
   max-width: 360px;
   flex-basis: calc((100% - 48px) / 3);
-  /* padding-bottom: 32px; */
   background-color: var(--portf-item-bg);
 }
 
