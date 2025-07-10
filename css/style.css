@@ -146,6 +146,19 @@ button {
   padding: 0px 15px 0px 15px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Page WebStudio */
 /* Section Header */
 .header {
@@ -161,7 +174,7 @@ button {
 .header-menu {
   display: flex;
   align-items: center;
-  }
+}
 
 /* Logo */
 .logo {
@@ -267,10 +280,13 @@ button {
 .values__list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .values__item {
   max-width: 264px;
+  flex-basis: calc((100% -72px) / 3);
 }
 
 .values__item-title {
@@ -286,13 +302,8 @@ button {
   padding-bottom: 120px;
 }
 
-.activities .container {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-}
-
 .activities-title {
+  margin-bottom: 72px;
   color: var(--activities-title-color);
   font-weight: 700;
   font-size: 36px;
@@ -302,7 +313,13 @@ button {
 
 .activities-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
+}
+
+.activities-image {
+  flex-basis: calc((100% -48px) / 3);
 }
 
 /* Section Team */
@@ -322,10 +339,13 @@ button {
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
 .team__person {
+  flex-basis: calc((100% - 72px) / 4);
   max-width: 264px;
   min-width: 264px;
   padding-bottom: 32px;
@@ -425,9 +445,8 @@ button {
 .portfolio-link-text {
   padding: 32px 0px 32px 16px;
   background-color: var(--portf-item-bg);
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-name {
